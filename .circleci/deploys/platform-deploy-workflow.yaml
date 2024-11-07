@@ -16,7 +16,7 @@ jobs:
     steps:
       - checkout
       - run: echo "Cloning << parameters.repo >>"
-      - run: echo "builder docker image << parameters.docker-image << from repo: << parameters.repo >>"
+      - run: echo "builder docker image << parameters.docker-image >> from repo: << parameters.repo >>"
       - run: echo "Deploying to << parameters.target >>"
       - run: echo "insert calling aws apis to create ecs instance here..."
       - run: echo "Waiting for deploy..."
