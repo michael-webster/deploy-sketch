@@ -26,4 +26,5 @@ jobs:
       - run: echo "Waiting for deploy..."
 workflows:
   deploy:
-    - deploy
+   jobs:
+     - deploy
