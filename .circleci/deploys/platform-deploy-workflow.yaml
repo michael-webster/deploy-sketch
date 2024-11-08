@@ -20,8 +20,8 @@ jobs:
       - checkout
       - run: echo "hello world"
       - run: echo "Cloning << pipeline.parameters.repo >>"
-      - run: echo "builder docker image << pipeline.parameters.docker-image >> from repo: << pipeline.parameters.repo >>"
-      - run: echo "Deploying to << pipeline.parameters.target >>"
+      #- run: echo "builder docker image << pipeline.parameters.docker-image >> from repo: << pipeline.parameters.repo >>"
+      #- run: echo "Deploying to << pipeline.parameters.target >>"
       - run: echo "insert calling aws apis to create ecs instance here..."
       - run: echo "Waiting for deploy..."
 workflows:
