@@ -7,6 +7,7 @@ jobs:
       - image: cimg/postgres:9.4.12
     steps:
       - checkout
+      # run this
       - run: yarn build
   test:
     docker:
